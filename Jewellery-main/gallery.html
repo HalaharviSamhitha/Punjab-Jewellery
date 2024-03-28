@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img
+          src="Jewel_Website/images/PUNJAB_LOGO-removebg-preview.png"
+          alt=""
+          class="logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- images section -->
+    <div class="fullimg" id="fullimgbox">
+      <img src="jewel1.jpg" alt="" id="fullimg" />
+      <span onclick="closefullimg()">X</span>
+    </div>
+
+    <div class="imagesection">
+      <div class="imggallery">
+        <img src="jewel13.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel14.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel16.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel17.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel5.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel6.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel7.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel8.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel9.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel10.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jwewl11.jpg" alt="" onclick="openfullimg(this.src)" />
+        <img src="jewel12.jpg" alt="" onclick="openfullimg(this.src)" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="col-1 content-columns">
+          <h2>Punjab Jewelers & Fabrics</h2>
+          <ul>
+            <li><i class="fa fa-map"></i> Punjab, India</li>
+            <li><i class="fa fa-phone"></i> 00000-00000</li>
+            <li>
+              <i class="fa fa-envelope"></i> PunjabJewelersFabrics@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 content-columns">
+          <h3>Our service</h3>
+          <ul>
+            <li>Jewellery</li>
+            <li>Fabrics</li>
+            <li>Jewellery Desigining</li>
+            <li>Marketing</li>
+          </ul>
+        </div>
+        <div class="col-4 content-columns">
+          <h3>Our Newsletter</h3>
+          <div class="col-4-content">
+            <div class="search-input">
+              <input type="email" name="" placeholder="email" id="" />
+              <input type="button" value="subscribe" />
+            </div>
+
+            <div class="social-links">
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-youtube"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year"></span>Samhitha. All rights reserved</p>
+      </div>
+    </footer>
+    <script>
+      var fullimgbox = document.getElementById("fullimgbox");
+      var fullimg = document.getElementById("fullimg");
+      function openfullimg(pic) {
+        fullimgbox.style.display = "flex";
+        fullimg.src = pic;
+      }
+      function closefullimg() {
+        fullimgbox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
